@@ -1,6 +1,6 @@
-module github.com/urothis/nwn-nwsync-digitalOcean-uploader
+module github.com/StefanoND/nwn-nwsync-digitalOcean-uploader
 
-go 1.14
+go 1.20
 
 require (
 	github.com/json-iterator/go v1.1.12 // indirect
