@@ -1,6 +1,8 @@
-FROM golang:1.20.6 as go-builder
+FROM golang:1.20 as go-builder
 COPY go /go/nwn-do
-RUN apt update -y && cd /go/nwn-do && go mod download && go build -o ./bin/b && mv bin/b /usr/local/bin/
+RUN apt update
+RUN cd /go/nwn-do && go mod download && go mod verify
+RUN go build -v -o ./bin/b && mv bin/b /usr/local/bin/
 FROM ubuntu:latest
 LABEL maintainer "urothis@gmail.com"
 COPY --from=go-builder /usr/local/bin/b /usr/local/bin/upload
