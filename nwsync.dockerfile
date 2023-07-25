@@ -7,5 +7,5 @@ FROM ubuntu:latest
 LABEL maintainer "urothis@gmail.com"
 COPY --from=go-builder /usr/local/bin/b /usr/local/bin/upload
 COPY nwsync /nwsync
-RUN apt update -y && apt-get install ca-certificates -y
+RUN apt update && apt-get install ca-certificates -y
 CMD upload
