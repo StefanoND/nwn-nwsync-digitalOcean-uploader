@@ -3,7 +3,7 @@ COPY go /go/nwn-do
 RUN apt update \
     && cd /go/nwn-do \
     && go mod download \
-    && go mod verify
+    && go mod verify \
     && go build -v -o ./bin/b \
     && mv bin/b /usr/local/bin/
 FROM ubuntu:latest
