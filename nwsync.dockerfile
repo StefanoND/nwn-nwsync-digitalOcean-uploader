@@ -1,4 +1,4 @@
-FROM golang:1.20.4 as go-builder
+FROM golang:1.20.6 as go-builder
 COPY go /go/nwn-do
 RUN apt update -y && cd /go/nwn-do && go mod download && go build -o ./bin/b && mv bin/b /usr/local/bin/
 FROM ubuntu:latest
