@@ -3,24 +3,24 @@ module github.com/StefanoND/nwn-nwsync-digitalOcean-uploader
 go 1.20
 
 require (
+	github.com/minio/minio-go/v6 v6.0.57
+	github.com/schollz/progressbar/v2 v2.15.0
+)
+
+require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect
-	github.com/kr/text v0.2.0 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
-	github.com/minio/minio-go/v6 v6.0.57
 	github.com/minio/sha256-simd v1.0.0 // indirect
 	github.com/mitchellh/colorstring v0.0.0-20190213212951-d06e56a500db // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/schollz/progressbar/v2 v2.15.0
 	github.com/stretchr/testify v1.5.1 // indirect
-	golang.org/x/crypto v0.1.0 // indirect
-	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
-	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
+	golang.org/x/crypto v0.14.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
+	golang.org/x/text v0.13.0 // indirect
 	gopkg.in/ini.v1 v1.63.2 // indirect
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
