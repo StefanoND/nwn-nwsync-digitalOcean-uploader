@@ -1,6 +1,6 @@
 # DEPRECATED - Consider using [v2.0](https://github.com/StefanoND/nwn-nwsync-digitalOcean-uploader/tree/main)
 
-# Nwsync uploader for Digital Ocean Spaces
+# v1.0 - NWSync uploader for Digital Ocean Spaces
 This is an application that I use in my CI for my personal nwn projects.
 
 This will ingest your nwsync files and upload them to a DigitalOcean Space.
