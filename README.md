@@ -1,4 +1,4 @@
-# Nwsync uploader for Digital Ocean Spaces v2.0
+# v2.0 - NWSync uploader for Digital Ocean Spaces
 This is an application that I use in my CI for my personal nwn projects.
 
 This will ingest your nwsync files and upload them to a DigitalOcean Space.
