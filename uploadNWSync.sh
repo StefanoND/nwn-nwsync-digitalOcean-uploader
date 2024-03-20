@@ -43,6 +43,11 @@ echo
 echo "Uploading nwsync folder to Digital Ocean Spaces"
 echo
 s3cmd put nwsync s3://"$spacename/$modulename"/ --recursive
+sleep 1s
+echo
+echo "Setting the \"$spacename\" and all its contents visibility to public recursively"
+echo
+s3cmd setacl s3://"$spacename" --recursive
 
 sleep 1s
 
