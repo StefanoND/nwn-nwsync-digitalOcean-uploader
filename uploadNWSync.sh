@@ -43,3 +43,11 @@ echo
 echo "Uploading nwsync folder to Digital Ocean Spaces"
 echo
 s3cmd put nwsync s3://"$spacename/$modulename"/ --recursive
+
+sleep 1s
+
+echo
+echo "Done"
+echo
+
+exit 0
