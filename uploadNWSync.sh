@@ -24,6 +24,10 @@ if ! [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
+curdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+pushd $curdir
+
 # Delete the README.md from nwsync folder if it exists
 if [[ -f nwsync/README.md ]]; then
     rm nwsync/README.md
