@@ -7,6 +7,9 @@
 # Path to your module
 modulepath="$HOME/.local/share/Neverwinter Nights/modules/mymodule.mod"
 
+# NWSync download description
+nwsyncdesc="Module's Required Files"
+
 # ======================================================================= #
 # DO NOT TOUCH ANYTHING BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING #
 # ======================================================================= #
@@ -20,9 +23,11 @@ if [ "$EUID" -ne 0 ]
         exit 1
 fi
 
-curdir="$PWD"
+curdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-./nwsync_write --description="Module's Required Files" "$curdir"/nwsync "$modulepath"
+pushd $curdir
+
+./nwsync_write --description="$nwsyncdesc" "$curdir"/nwsync "$modulepath"
 
 sleep 1s
 
